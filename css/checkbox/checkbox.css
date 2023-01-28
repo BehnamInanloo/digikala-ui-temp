@@ -1,0 +1,154 @@
+/* Hide the browser's default checkbox */
+.container-checkbox {
+    position: relative;
+}
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-login1 {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkmark-login2 {
+    position: absolute;
+    top: 38px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkmark-login3 {
+    position: absolute;
+    top: 71px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark-login1 {
+    background-color: #ccc;
+}
+
+.checkbox:hover input ~ .checkmark-login2 {
+    background-color: #ccc;
+}
+
+.checkbox:hover input ~ .checkmark-login3 {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark-login1 {
+    background-color: #2196F3;
+}
+
+.checkbox input:checked ~ .checkmark-login2 {
+    background-color: #2196F3;
+}
+
+.checkbox input:checked ~ .checkmark-login3 {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-login1::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkmark-login2::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkmark-login3::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark-login1::after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox .checkmark-login2::after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox .checkmark-login3::after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark-login1::after {
+    display: block;
+}
+
+.checkbox input:checked ~ .checkmark-login2::after {
+    display: block;
+}
+
+.checkbox input:checked ~ .checkmark-login3::after {
+    display: block;
+}
+
+label.checkbox-container {
+    margin-right: 50px;
+    cursor: pointer;
+    color: #3b3b3b;
+    font-size: 14px;
+}
+
+label.checkbox-container:hover {
+    background: #f9f9f9;
+}
+
+.checkbox:hover {
+    background: #f9f9f9;
+}
+
+.brand_eng {
+    font-size: 13px;
+    color: #ccc;
+}
